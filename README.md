@@ -3,7 +3,7 @@
 Manuscript title: "Experimental assessment of plan-view and profile-view gross edge curvature on stone flake
 slicing efficiency"
 
-Manuscript authors: Somaye Khaksar, Nisarg Desai, Metin I. Eren, Gil Tostevin
+Manuscript authors: Somaye Khaksar, Nisarg Desai, Metin I. Eren, Gilbert Tostevin
 
 Code author: Nisarg P. Desai, desai054[at]umn[dot]edu
 
