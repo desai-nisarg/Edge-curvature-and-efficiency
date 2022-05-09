@@ -18,12 +18,11 @@ Gel <- Gel %>% add_column("sLength_mm" = scale(Gel$Length_mm),
                           "sHand_force" = scale(Gel$Hand_force),
                           "sPlan" = scale(Gel$Plan),
                           "sProfile" = scale(Gel$Profile),
-                          "sEdge_length_mm" = scale(Gel$Edge_length_mm),
-                          "Segmentation" = scale((Gel$Plan + Gel$Profile)/2))
+                          "sEdge_length_mm" = scale(Gel$Edge_length_mm))
 
 Gel %>% summarize(mean_HS = mean(Hand_force), sd = sd(Hand_force), range = range(Hand_force))
 
-### Plot for time vs. edge length for high and low plan segmentation 
+### Plot for time vs. edge length for high and low plan curvature
 Gel <- Gel %>% add_column("Plan Curvature" = ifelse(Gel$Plan_cat == "high", "High", "Low"))
 ggplot(Gel, aes(x=sEdge_length_mm, y=Time_s, color=`Plan Curvature`, shape = `Plan Curvature`)) +
   scale_color_manual(values = c("#E69F00", "#56B4E9"))+
