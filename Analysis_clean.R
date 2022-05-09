@@ -57,7 +57,7 @@ plan_profile <- Time_s ~ sPlan + sProfile + sEdge_length_mm + (1|Participant) + 
 
 ####### MODEL SELECTIONS #######
 
-### Models including edge length, plan and profile segmentation, and hand strength.
+### Models including edge length, plan and profile curvature, and hand strength.
 
 ## Full model selection results
 mod_sel_plan_profile_hand <- full_model_selection(plan_profile_hand, Gel)$model.selection
@@ -70,7 +70,7 @@ avg_models_plan_profile_hand
 confint(avg_models_plan_profile_hand)
 
 
-### Models including edge length, plan and profile segmentation, and hand strength.
+### Models including edge length, plan and profile curvature, and hand strength.
 
 ## Full model selection results
 mod_sel_plan_profile <- full_model_selection(plan_profile, Gel)$model.selection
