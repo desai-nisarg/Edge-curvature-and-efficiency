@@ -70,7 +70,7 @@ avg_models_plan_profile_hand
 confint(avg_models_plan_profile_hand)
 
 
-### Models including edge length, plan and profile curvature, and hand strength.
+### Models including edge length, plan and profile curvature (no hand strength).
 
 ## Full model selection results
 mod_sel_plan_profile <- full_model_selection(plan_profile, Gel)$model.selection
